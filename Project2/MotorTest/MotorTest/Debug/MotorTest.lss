@@ -1,0 +1,239 @@
+
+MotorTest.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00802800  00802800  000001c6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000172  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001c6  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001f8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000050  00000000  00000000  00000238  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00002fd2  00000000  00000000  00000288  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00002485  00000000  00000000  0000325a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000046b  00000000  00000000  000056df  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000044  00000000  00000000  00005b4c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00001433  00000000  00000000  00005b90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000c4  00000000  00000000  00006fc3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00007087  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 50 00 	jmp	0xa0	; 0xa0 <__ctors_end>
+   4:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+   8:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+   c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  10:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  14:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  18:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  1c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  20:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  24:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  28:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  2c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  30:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  34:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  38:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  3c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  40:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  44:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  48:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  4c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  50:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  54:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  58:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  5c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  60:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  64:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  68:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  6c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  70:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  74:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  78:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  7c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  80:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  84:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  88:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  8c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  90:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  94:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  98:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+  9c:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__bad_interrupt>
+
+000000a0 <__ctors_end>:
+  a0:	11 24       	eor	r1, r1
+  a2:	1f be       	out	0x3f, r1	; 63
+  a4:	cf ef       	ldi	r28, 0xFF	; 255
+  a6:	cd bf       	out	0x3d, r28	; 61
+  a8:	df e3       	ldi	r29, 0x3F	; 63
+  aa:	de bf       	out	0x3e, r29	; 62
+  ac:	0e 94 74 00 	call	0xe8	; 0xe8 <main>
+  b0:	0c 94 b7 00 	jmp	0x16e	; 0x16e <_exit>
+
+000000b4 <__bad_interrupt>:
+  b4:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000b8 <CLOCK_init>:
+}
+
+void CLOCK_init (void)
+{
+	/* Disable CLK_PER Prescaler */
+	ccp_write_io( (void *) &CLKCTRL.MCLKCTRLB , (0 << CLKCTRL_PEN_bp));
+  b8:	60 e0       	ldi	r22, 0x00	; 0
+  ba:	81 e6       	ldi	r24, 0x61	; 97
+  bc:	90 e0       	ldi	r25, 0x00	; 0
+  be:	0e 94 b1 00 	call	0x162	; 0x162 <ccp_write_io>
+  c2:	08 95       	ret
+
+000000c4 <WG_SSPWM_init>:
+	/* CMP0 gives the frequency. CMP1 is an offset (delayed) version */
+	TCA0.SINGLE.CMP1 = 1250;		/* Start with 0 duty cycle */
+	/* No interrupts used here ! */
+
+	#else
+	PORTA.DIRSET = PIN1_bm;		// WO-1 used for PWM
+  c4:	82 e0       	ldi	r24, 0x02	; 2
+  c6:	80 93 01 04 	sts	0x0401, r24	; 0x800401 <__TEXT_REGION_LENGTH__+0x7f4401>
+	TCA0.SINGLE.CTRLA = 0b00001001;  /* (TCA_SINGLE_CLKSEL_DIV16_gc | TCA_SINGLE_ENABLE_bm); */
+  ca:	e0 e0       	ldi	r30, 0x00	; 0
+  cc:	fa e0       	ldi	r31, 0x0A	; 10
+  ce:	89 e0       	ldi	r24, 0x09	; 9
+  d0:	80 83       	st	Z, r24
+	/*  we need 50Hz, 20ms period */
+	TCA0.SINGLE.CTRLB = 0b00100011;  /* (TCA_SINGLE_CMP1EN_bm | TCA_SINGLE_WGMODE_SINGLESLOPE_gc); */
+  d2:	83 e2       	ldi	r24, 0x23	; 35
+  d4:	81 83       	std	Z+1, r24	; 0x01
+	/* Frequency generation mode, with two output pins selected - this takes over the PORT pins */
+	TCA0.SINGLE.PER = 24999; /* It's up to the designer to verify the target frequency for the end use */
+  d6:	87 ea       	ldi	r24, 0xA7	; 167
+  d8:	91 e6       	ldi	r25, 0x61	; 97
+  da:	86 a3       	std	Z+38, r24	; 0x26
+  dc:	97 a3       	std	Z+39, r25	; 0x27
+	/* CMP0 gives the frequency. CMP1 is an offset (delayed) version */
+	TCA0.SINGLE.CMP1 = 1250;		/* Start with 0 duty cycle */
+  de:	82 ee       	ldi	r24, 0xE2	; 226
+  e0:	94 e0       	ldi	r25, 0x04	; 4
+  e2:	82 a7       	std	Z+42, r24	; 0x2a
+  e4:	93 a7       	std	Z+43, r25	; 0x2b
+  e6:	08 95       	ret
+
+000000e8 <main>:
+
+int main(void)
+{
+	uint16_t servoCounter = 0;
+	
+	CLOCK_init();
+  e8:	0e 94 5c 00 	call	0xb8	; 0xb8 <CLOCK_init>
+	
+	WG_SSPWM_init();
+  ec:	0e 94 62 00 	call	0xc4	; 0xc4 <WG_SSPWM_init>
+	
+	while (1)
+	{
+		for (servoCounter = 0; servoCounter < MAXCOUNT; servoCounter++)
+  f0:	80 e0       	ldi	r24, 0x00	; 0
+  f2:	90 e0       	ldi	r25, 0x00	; 0
+  f4:	16 c0       	rjmp	.+44     	; 0x122 <__EEPROM_REGION_LENGTH__+0x22>
+		{
+			TCA0.SINGLE.CMP1BUF = 1250 + (STEP_SIZE * servoCounter);
+  f6:	4f e3       	ldi	r20, 0x3F	; 63
+  f8:	48 9f       	mul	r20, r24
+  fa:	90 01       	movw	r18, r0
+  fc:	49 9f       	mul	r20, r25
+  fe:	30 0d       	add	r19, r0
+ 100:	11 24       	eor	r1, r1
+ 102:	2e 51       	subi	r18, 0x1E	; 30
+ 104:	3b 4f       	sbci	r19, 0xFB	; 251
+ 106:	20 93 3a 0a 	sts	0x0A3A, r18	; 0x800a3a <__TEXT_REGION_LENGTH__+0x7f4a3a>
+ 10a:	30 93 3b 0a 	sts	0x0A3B, r19	; 0x800a3b <__TEXT_REGION_LENGTH__+0x7f4a3b>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 10e:	2f e3       	ldi	r18, 0x3F	; 63
+ 110:	3d e0       	ldi	r19, 0x0D	; 13
+ 112:	43 e0       	ldi	r20, 0x03	; 3
+ 114:	21 50       	subi	r18, 0x01	; 1
+ 116:	30 40       	sbci	r19, 0x00	; 0
+ 118:	40 40       	sbci	r20, 0x00	; 0
+ 11a:	e1 f7       	brne	.-8      	; 0x114 <__EEPROM_REGION_LENGTH__+0x14>
+ 11c:	00 c0       	rjmp	.+0      	; 0x11e <__EEPROM_REGION_LENGTH__+0x1e>
+ 11e:	00 00       	nop
+	
+	WG_SSPWM_init();
+	
+	while (1)
+	{
+		for (servoCounter = 0; servoCounter < MAXCOUNT; servoCounter++)
+ 120:	01 96       	adiw	r24, 0x01	; 1
+ 122:	84 31       	cpi	r24, 0x14	; 20
+ 124:	91 05       	cpc	r25, r1
+ 126:	38 f3       	brcs	.-50     	; 0xf6 <main+0xe>
+ 128:	84 e1       	ldi	r24, 0x14	; 20
+ 12a:	90 e0       	ldi	r25, 0x00	; 0
+ 12c:	16 c0       	rjmp	.+44     	; 0x15a <__EEPROM_REGION_LENGTH__+0x5a>
+			TCA0.SINGLE.CMP1BUF = 1250 + (STEP_SIZE * servoCounter);
+			_delay_ms(50);
+		}
+		for (servoCounter = MAXCOUNT; servoCounter > 1; servoCounter--)
+		{
+			TCA0.SINGLE.CMP1BUF = 1250 + (STEP_SIZE * servoCounter);
+ 12e:	4f e3       	ldi	r20, 0x3F	; 63
+ 130:	48 9f       	mul	r20, r24
+ 132:	90 01       	movw	r18, r0
+ 134:	49 9f       	mul	r20, r25
+ 136:	30 0d       	add	r19, r0
+ 138:	11 24       	eor	r1, r1
+ 13a:	2e 51       	subi	r18, 0x1E	; 30
+ 13c:	3b 4f       	sbci	r19, 0xFB	; 251
+ 13e:	20 93 3a 0a 	sts	0x0A3A, r18	; 0x800a3a <__TEXT_REGION_LENGTH__+0x7f4a3a>
+ 142:	30 93 3b 0a 	sts	0x0A3B, r19	; 0x800a3b <__TEXT_REGION_LENGTH__+0x7f4a3b>
+ 146:	2f e3       	ldi	r18, 0x3F	; 63
+ 148:	3d e0       	ldi	r19, 0x0D	; 13
+ 14a:	43 e0       	ldi	r20, 0x03	; 3
+ 14c:	21 50       	subi	r18, 0x01	; 1
+ 14e:	30 40       	sbci	r19, 0x00	; 0
+ 150:	40 40       	sbci	r20, 0x00	; 0
+ 152:	e1 f7       	brne	.-8      	; 0x14c <__EEPROM_REGION_LENGTH__+0x4c>
+ 154:	00 c0       	rjmp	.+0      	; 0x156 <__EEPROM_REGION_LENGTH__+0x56>
+ 156:	00 00       	nop
+		for (servoCounter = 0; servoCounter < MAXCOUNT; servoCounter++)
+		{
+			TCA0.SINGLE.CMP1BUF = 1250 + (STEP_SIZE * servoCounter);
+			_delay_ms(50);
+		}
+		for (servoCounter = MAXCOUNT; servoCounter > 1; servoCounter--)
+ 158:	01 97       	sbiw	r24, 0x01	; 1
+ 15a:	82 30       	cpi	r24, 0x02	; 2
+ 15c:	91 05       	cpc	r25, r1
+ 15e:	38 f7       	brcc	.-50     	; 0x12e <__EEPROM_REGION_LENGTH__+0x2e>
+ 160:	c7 cf       	rjmp	.-114    	; 0xf0 <main+0x8>
+
+00000162 <ccp_write_io>:
+ 162:	dc 01       	movw	r26, r24
+ 164:	28 ed       	ldi	r18, 0xD8	; 216
+ 166:	20 93 34 00 	sts	0x0034, r18	; 0x800034 <__TEXT_REGION_LENGTH__+0x7f4034>
+ 16a:	6c 93       	st	X, r22
+ 16c:	08 95       	ret
+
+0000016e <_exit>:
+ 16e:	f8 94       	cli
+
+00000170 <__stop_program>:
+ 170:	ff cf       	rjmp	.-2      	; 0x170 <__stop_program>
